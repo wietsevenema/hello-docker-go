@@ -1,0 +1,11 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata: 
+  name: hello-ko
+spec:
+  template:    
+    spec:
+      containers:
+      - image: ko://github.com/wietsevenema/hello-docker-go        
+  
+
